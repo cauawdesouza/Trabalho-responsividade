@@ -260,3 +260,31 @@ main { padding: 24px 6%; }
   .botao { padding: 12px 28px; }
   .rodape { flex-direction: column; }
 }
+
+/* ========== BOTÃO VOLTAR AO TOPO ========== */
+html { scroll-behavior: smooth; }   /* rolagem suave ao clicar nos links internos */
+
+.voltar-topo {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--verde);
+  color: var(--fundo);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .4);
+  transition: .25s;
+}
+.voltar-topo:hover { background: var(--azul); transform: translateY(-4px); }
+
+/* botão menor no celular */
+@media (max-width: 600px) {
+  .voltar-topo { width: 42px; height: 42px; right: 16px; bottom: 16px; font-size: 1.2rem; }
+}
