@@ -94,6 +94,36 @@ main { padding: 24px 6%; }
 .card h3 { margin-bottom: 10px; }
 .card p { color: var(--texto-suave); font-size: 1rem; }
 
+/* ========== ÚLTIMAS NOTÍCIAS ========== */
+.noticias { margin-top: 40px; }
+.noticias h2 { color: var(--azul); font-size: 1.8rem; margin-bottom: 24px; text-align: center; }
+
+.lista-noticias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.noticia {
+  background: var(--painel);
+  border: 1px solid var(--borda);
+  border-left: 4px solid var(--verde);
+  border-radius: 12px;
+  padding: 22px;
+}
+.noticia .tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 2px 12px;
+  border-radius: 50px;
+  background: var(--borda);
+  color: var(--azul);
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.noticia h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.noticia p { color: var(--texto-suave); font-size: .95rem; }
+
 /* ========== CHAMADA PARA AÇÃO (PARTE II) ========== */
 .cta {
   margin-top: 40px;
@@ -198,7 +228,8 @@ main { padding: 24px 6%; }
   .cabecalho { text-align: center; }
 
   .cards { flex-direction: column; }      /* cards reorganizados */
-  .destaques h2, .localizacao h2, .cta h2, .faq h2 { font-size: 1.5rem; }
+  .destaques h2, .localizacao h2, .cta h2, .faq h2, .noticias h2 { font-size: 1.5rem; }
+  .lista-noticias { grid-template-columns: 1fr; }   /* notícias uma abaixo da outra */
 }
 
 /* =====================================================
