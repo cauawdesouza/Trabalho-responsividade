@@ -1,0 +1,17 @@
+# Arquivos que NÃO devem ser enviados ao repositório remoto
+
+# 1. Variáveis de ambiente / dados sensíveis
+.env
+
+# 2. Anotações pessoais do desenvolvedor
+anotacoes.txt
+
+# 3. Configurações do editor (VS Code)
+.vscode/
+
+# 4. Arquivos de log
+*.log
+
+# 5. Arquivos gerados automaticamente pelo Windows
+Thumbs.db
+desktop.ini
